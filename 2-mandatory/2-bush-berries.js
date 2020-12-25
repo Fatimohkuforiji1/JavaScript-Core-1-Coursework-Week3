@@ -21,8 +21,18 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function bushChecker() {}
+function bushChecker(colorArr) {
+    let colorCheck = colorArr.every(function (color){
+        return (color === "pink")
+    }
+)
+   let msg = "Toxic! Leave bush alone!";
+   if (colorCheck === true){
+        msg =   "Bush is safe to eat from"
+   }
+    return msg;
 
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 let bushBerryColours1 = ["pink", "pink", "pink", "neon", "pink", "transparent"];

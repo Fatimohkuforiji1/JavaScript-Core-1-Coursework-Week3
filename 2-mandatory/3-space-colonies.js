@@ -15,8 +15,15 @@
   
 */
 
-function colonisers() {}
+function colonisers(allVoyagers) {
+    let colonizers = allVoyagers.filter(function(voyager){
+    return (voyager[0]==="A")&&(voyager.includes("family"));
+    }
+)
 
+    return colonizers;
+
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const voyagers = [
