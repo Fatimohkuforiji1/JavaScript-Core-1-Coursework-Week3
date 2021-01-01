@@ -6,12 +6,13 @@
   - Finish the statement on line 11 to produce an array with valid content
   - Do not edit any of the existing code
 */
+
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-let arrPaired = function(iteM) {
-  return Array.isArray(iteM) && iteM.length === 2;
+let testArr = function (item) {
+  return Array.isArray(item) && item.length === 2;
 };
-var pairsByIndex = pairsByIndexRaw.filter(arrPaired); // Complete this statement
+var pairsByIndex = pairsByIndexRaw.filter(testArr); // Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
