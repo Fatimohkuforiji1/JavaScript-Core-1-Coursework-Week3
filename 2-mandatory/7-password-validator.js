@@ -22,9 +22,16 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 */
 
-function validatePasswords(passwords) {
-
-}
+function validatePasswords(passwords){
+ const testStr = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!#\$%\.\*&]).{5,}/;
+ const pswdCopy= [];
+ const pswdCheck = passwords.map(function(password){
+    let repeated = !(pswdCopy.includes(password));
+    pswdCopy.push(password)
+    return ((testStr.test(password)) && repeated);
+ })
+return pswdCheck;
+ }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

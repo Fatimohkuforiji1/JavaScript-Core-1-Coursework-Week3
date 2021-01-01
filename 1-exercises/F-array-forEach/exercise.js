@@ -8,6 +8,22 @@
 */
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+arr.forEach(function fizzBuzz(val){
+  if (val % 3 ===0 && val % 5 ===0){
+    console.log("FizzBuzz")
+  }else
+  if(val%3 === 0){
+    console.log ("Fizz")
+  }else
+  if (val%5 === 0){
+    console.log("Buzz")
+  }else
+ 
+  if ((val % 3 !== 0) && (val % 5 !== 9)){
+  console.log(val)
+}
+})
+
 
 /* EXPECTED OUTPUT */
 
